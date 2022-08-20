@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <title>レストラン</title>
+    <link rel ="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family
+    =Dancing+Script:wght@400;700&family=DynaPuff:wght@400;700&di
+    splay=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <section class="contact">
+        <nav>
+            <a href="contact.html">
+                <img src ="images/111.png"></a>
+                <div class ="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>  
+                    <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="service.html">サービス</a></li>
+                    <li><a href="foods.html">料理</a></li>
+                    <li><a href="drinks.html">ドリンク</a></li>
+                    <li><a href="contact.html">相談</a></li>
+                    </ul>
+
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>お問い合わせ<span></span></h1>
+    <h1>MISTRO屋<span></span></h1>
+    <p>Cooking and feeding other is the best thing in the world.
+        Seeing smiles in our customer faces are our main motto.
+        <br> We WELCOME you to the the most ancient NEWA Food Restautant.
+    </p>    
+    
+     </section>
+    
+     <!-------JavaScript for toggle menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    </body>
+    </html>     
